@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Prakash-Raut/Developer-Dashboard/issues"
   },
-  "homepage": "https://github.com/Prakash-Raut/Developer-Dashboard#readme"
+  "homepage": "https://github.com/Prakash-Raut/Developer-Dashboard#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }
