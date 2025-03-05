@@ -1,6 +1,6 @@
-import { config } from "dotenv";
+import dotenvFlow from "dotenv-flow";
 
-config();
+dotenvFlow.config();
 
 const { PORT, NODE_ENV } = process.env;
 
