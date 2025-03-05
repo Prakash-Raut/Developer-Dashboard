@@ -4,11 +4,12 @@
 	"description": "stdlib developer dashboard",
 	"main": "index.js",
 	"scripts": {
-    "build": "tsc",
+		"build": "tsc",
 		"lint": "npx @biomejs/biome lint --write .",
 		"format": "npx @biomejs/biome format --write .",
 		"check": "npx @biomejs/biome check --write .",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky"
 	},
 	"repository": {
 		"type": "git",
@@ -27,7 +28,13 @@
 	"homepage": "https://github.com/Prakash-Raut/Developer-Dashboard#readme",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
 		"typescript": "^5.8.2"
+	},
+	"lint-staged": {
+		"*.ts": [
+			"npm run check"
+		]
 	}
 }
-
