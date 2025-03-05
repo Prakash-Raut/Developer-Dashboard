@@ -28,6 +28,7 @@
 	"homepage": "https://github.com/Prakash-Raut/Developer-Dashboard#readme",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"@types/node": "^22.13.9",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.4.3",
 		"typescript": "^5.8.2"
@@ -36,5 +37,8 @@
 		"*.ts": [
 			"npm run check"
 		]
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7"
 	}
 }
