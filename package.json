@@ -1,27 +1,33 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "stdlib developer dashboard",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Prakash-Raut/Developer-Dashboard.git"
-  },
-  "keywords": [
-    "metrics",
-    "failure",
-    "logging"
-  ],
-  "author": "Prakash Raut",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Prakash-Raut/Developer-Dashboard/issues"
-  },
-  "homepage": "https://github.com/Prakash-Raut/Developer-Dashboard#readme",
-  "devDependencies": {
-    "typescript": "^5.8.2"
-  }
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "stdlib developer dashboard",
+	"main": "index.js",
+	"scripts": {
+    "build": "tsc",
+		"lint": "npx @biomejs/biome lint --write .",
+		"format": "npx @biomejs/biome format --write .",
+		"check": "npx @biomejs/biome check --write .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Prakash-Raut/Developer-Dashboard.git"
+	},
+	"keywords": [
+		"metrics",
+		"failure",
+		"logging"
+	],
+	"author": "Prakash Raut",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Prakash-Raut/Developer-Dashboard/issues"
+	},
+	"homepage": "https://github.com/Prakash-Raut/Developer-Dashboard#readme",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"typescript": "^5.8.2"
+	}
 }
+
